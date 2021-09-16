@@ -1,5 +1,11 @@
 
 class VQGanVAE(nn.Module):
+    """
+    VQGAN from the Taming Transformers paper
+     
+    https://arxiv.org/abs/2012.09841    
+    """
+
     def __init__(self, vqgan_model_path=None, vqgan_config_path=None):
         super().__init__()
 
