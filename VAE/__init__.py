@@ -98,9 +98,6 @@ def make_contiguous(module):
         for param in module.parameters():
             param.set_(param.contiguous())
 
-# VQGAN from Taming Transformers paper
-# https://arxiv.org/abs/2012.09841
-
 def get_obj_from_str(string, reload=False):
     module, cls = string.rsplit(".", 1)
     if reload:
